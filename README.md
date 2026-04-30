@@ -84,3 +84,34 @@ Al ejecutar el programa, se muestra el detalle de ventas por región, el reporte
 - Ventas acumuladas por trimestre (Q1, Q2, Q3, Q4)
 - Reporte ordenado de mayor a menor ventas
 - Comprensiones de diccionario para transformaciones rápidas
+
+## Reto módulo 4: Tiendas y recomendaciones de películas con conjuntos
+
+# Descripción
+Este módulo implementa un sistema de análisis de catálogos de tiendas y preferencias de usuarios utilizando conjuntos (sets) en Python. Permite gestionar productos de tres tiendas y analizar gustos cinematográficos de usuarios, demostrando conceptos fundamentales de teoría de conjuntos, elementos únicos y operaciones matemáticas.
+
+# Conceptos Aplicados
+Conjuntos (sets) – Colecciones de elementos únicos y desordenados
+
+Operaciones básicas – add(), update(), remove(), discard(), pop()
+
+Métodos de conjuntos – union(), intersection(), difference(), isdisjoint()
+
+Operadores matemáticos – | (unión), & (intersección), - (diferencia), ^ (diferencia simétrica)
+
+Operadores de comparación – <= (subconjunto), >= (superconjunto)
+
+## Salida
+![Modulo 4 salida](images/conjuntosSalida1.png)
+![Modulo 4 salida](images/conjuntosSalida2.png)
+
+Al ejecutar el programa, se muestra el análisis completo de los catálogos de tres tiendas y las preferencias de tres usuarios con el siguiente formato:
+
+- Catálogos individuales de cada tienda (Centro, Norte, Sur)
+- Catálogo completo (unión de todas las tiendas)
+- Productos que están en las tres tiendas (intersección)
+- Productos exclusivos de cada tienda (diferencia)
+- Verificación de solapamientos entre tiendas
+- Preferencias de cada usuario (géneros cinematográficos)
+- Operaciones matemáticas: intersección, unión, diferencia y diferencia simétrica
+- Relaciones de subconjunto entre usuarios
