@@ -1,3 +1,27 @@
+## Fundamentos de Python: Estructuras de Datos en Python
+
+**Aprendiz:** Valentina Correa Hoyos
+
+**Curso:** Programación Avanzada Python Backend
+
+# Descripción del proyecto
+
+Este repositorio contiene la solución a los cinco retos del curso de Estructuras de Datos en Python. Cada módulo implementa un sistema práctico que aplica los conceptos fundamentales de listas, tuplas, diccionarios, conjuntos y comprehensions. El objetivo es demostrar el dominio de las colecciones en Python, su manipulación, rendimiento y buenas prácticas de programación.
+
+Los cinco sistemas desarrollados son:
+
+Módulo 1 – Sistema de inventario con listas: gestión de productos, precios y stock usando listas anidadas.
+
+Módulo 2 – Catálogo de películas con tuplas: manejo de datos inmutables, desempaquetado y operador *.
+
+Módulo 3 – Análisis de ventas por región con diccionarios: diccionarios anidados, comprehensions y reportes con porcentajes.
+
+Módulo 4 – Tiendas y recomendaciones con conjuntos: operaciones de teoría de conjuntos (unión, intersección, diferencia) y comparación de subconjuntos.
+
+Módulo 5 – Analizador de ventas con comprehensions: list, dict y set comprehensions para transformar y filtrar datos eficientemente.
+
+Cada módulo incluye su propio código, ejemplos de salida y una explicación de los conceptos aplicados.
+
 ## Reto módulo 1: Sistema de inventario con listas
 
 # Descripción
@@ -115,3 +139,54 @@ Al ejecutar el programa, se muestra el análisis completo de los catálogos de t
 - Preferencias de cada usuario (géneros cinematográficos)
 - Operaciones matemáticas: intersección, unión, diferencia y diferencia simétrica
 - Relaciones de subconjunto entre usuarios
+
+## Reto módulo 5: Analizador de ventas con comprehensions
+
+# Descripción
+Este módulo implementa un sistema de análisis de ventas utilizando las tres formas de comprehensions en Python: list comprehension, dict comprehension y set comprehension. Permite calcular totales, generar mapeos, detectar unicidad y filtrar datos de manera concisa y eficiente, demostrando la ventaja de rendimiento frente a bucles tradicionales.
+
+# Conceptos Aplicados
+List comprehension – [expr for x in it if cond] para crear listas en una línea
+
+Dict comprehension – {k: v for x in it if cond} para construir diccionarios
+
+Set comprehension – {expr for x in it if cond} para conjuntos con unicidad automática
+
+Filtrado – Cláusula if al final de la comprehension
+
+Transformación – Aplicar operaciones a cada elemento (unidades × precio)
+
+Ordenamiento – sorted() con key=lambda para ranking descendente
+
+Rendimiento – Las comprehensions son hasta 40% más rápidas que bucles equivalentes
+
+# Salida
+
+![Modulo 5 salida](images/modulo5salida1.png)
+![Modulo 5 salida](images/modulo5salida2.png)
+
+Al ejecutar el programa, se muestra el análisis completo de ventas con el siguiente formato:
+
+- Valor total por producto calculado con list comprehension
+- Productos cuyo valor total supera los $1000 (list comprehension con filtro)
+- Diccionario con información detallada por producto (dict comprehension)
+- Ranking de productos premium (precio > 50) ordenados de mayor a menor valor total
+- Categorías únicas y productos baratos (precio ≤ 50) usando set comprehension
+- Resumen final integrado con gran total calculado mediante sum()
+- Comparativa de rendimiento entre comprehension y bucle tradicional
+
+## Reflexión personal de aprendizaje
+
+A lo largo del desarrollo de estos cinco módulos, he podido consolidar mi comprensión de las estructuras de datos fundamentales en Python. A continuación, comparto mis principales aprendizajes:
+
+Listas (mutabilidad y anidamiento): Aprendí a manejar listas de listas para representar tablas de datos, modificar elementos in‑place y realizar búsquedas lineales. El sistema de inventario me enseñó la importancia de validar condiciones (como stock suficiente) antes de modificar los datos.
+
+Tuplas (inmutabilidad y desempaquetado): Descubrí cómo la inmutabilidad de las tuplas proporciona seguridad en datos que no deben cambiar, como un catálogo de películas. El desempaquetado y el operador * hacen el código más legible y Pythonico. También comprendí la diferencia entre copy() superficial y deepcopy() para objetos anidados.
+
+Diccionarios (clave‑valor y anidamiento): Aprendí a usar diccionarios para modelar relaciones complejas (regiones con trimestres). Las vistas items(), keys() y values() facilitan la iteración. La comprensión de diccionarios me permitió generar reportes de porcentajes de forma concisa. El uso de max() con lambda para encontrar la región líder fue un gran descubrimiento.
+
+Conjuntos (unicidad y teoría de conjuntos): Entendí el poder de los sets para eliminar duplicados automáticamente y realizar operaciones matemáticas como unión, intersección y diferencia. Los operadores |, &, -, ^ hacen el código más expresivo. Verificar subconjuntos con <= es muy útil para comparar preferencias de usuarios.
+
+Comprehensions (rendimiento y elegancia): Las comprehensions son mi herramienta favorita. Mejoré la legibilidad y el rendimiento de mi código (hasta un 40% más rápido que bucles equivalentes). Aprendí a aplicarlas en listas, diccionarios y conjuntos, combinando transformaciones y filtros en una sola línea. También entendí cuándo NO usarlas (lógica compleja o más de dos condiciones).
+
+Conclusión: Esta experiencia me ha dado confianza para elegir la estructura de datos adecuada según el problema: listas para colecciones mutables, tuplas para datos inmutables, diccionarios para búsquedas por clave, conjuntos para unicidad y operaciones de teoría, y comprehensions para transformaciones eficientes. Además, internalicé la importancia de escribir código claro, documentado y fácil de mantener.
